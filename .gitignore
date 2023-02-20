@@ -199,3 +199,9 @@ README.html
 *.iml
 .idea
 .exercism
+
+### gsd ###
+chromedriver.exe
+src/main/resources/config.properties
+.apt_generated_tests
+sample.html
