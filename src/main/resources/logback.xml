@@ -1,0 +1,18 @@
+<configuration>
+    <appender name="OUTPUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%green([%date]) %yellow([%thread]) %highlight(%-5level) %cyan(%logger{15}) %magenta([%file : %line]) - %gray(%msg %n)</pattern>
+        </encoder>
+    </appender>
+
+    <filter class="ch.qos.logback.classic.filter.LevelFilter">
+        <level>INFO</level>
+        <onMatch>DENY</onMatch>
+        <onMismatch>ACCEPT</onMismatch>
+    </filter>
+
+    <root level="info">
+        <appender-ref ref="OUTPUT" />
+    </root>
+
+</configuration>
