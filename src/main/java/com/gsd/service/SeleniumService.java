@@ -19,7 +19,7 @@ public class SeleniumService {
         chromeDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         chromeDriver.navigate().to(url);
         WebElement jobListingsElement = chromeDriver
-                .findElement(By.xpath("/html/body/div[1]/div/div[2]/div/section[2]/div/div/div/ul"));
+                .findElement(By.xpath("//ul[@class='job_listings']"));
         jobListingsElement.findElements(By.className("job_listing"))
                 .forEach(job -> System.out.println(job.findElement(By.className("job_listing-title")).getText()));
     }
