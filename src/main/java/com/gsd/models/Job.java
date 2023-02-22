@@ -13,13 +13,13 @@ public class Job {
     String id;
     String title;
     URL url;
-    String discription;
+    String description;
     String type;
     String expireDate;
     String companyName;
     String location;
-    String employeementType;
-    String employeementPeriod;
+    String employmentType;
+    String employmentPeriod;
     String jobUrgency;
     String companyLogo;
     String listingSite;

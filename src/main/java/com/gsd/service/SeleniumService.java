@@ -41,9 +41,9 @@ public class SeleniumService {
                         jobListing.findElement(By.xpath("//div[@class='job_listing-company']//strong")).getText());
                 newJob.location(
                         jobListing.findElement(By.xpath("//div[@class='location col-md-5 col-lg-4']")).getText());
-                newJob.discription(jobListing
+                newJob.description(jobListing
                         .findElement(By.xpath("//div[@class='job_listing-overview job_listing__column']")).getText());
-                newJob.employeementPeriod(
+                newJob.employmentPeriod(
                         jobListing.findElement(By.xpath("//li[@class='job-type full-time']")).getText());
                 newJob.expireDate(jobListing.findElement(By.xpath("//li[@class='date']")).getText());
                 logger.info(newJob.toString());
